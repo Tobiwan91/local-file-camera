@@ -1,0 +1,11 @@
+{
+  "domain": "local_file_camera",
+  "name": "Local File Camera",
+  "version": "1.0.0",
+  "documentation": "https://github.com/Tobiwan91/local-file-camera",
+  "issue_tracker": "https://github.com/Tobiwan91/local-file-camera/issues",
+  "codeowners": ["@Tobiwan91"],
+  "config_flow": true,
+  "iot_class": "local_polling",
+  "requirements": []
+}

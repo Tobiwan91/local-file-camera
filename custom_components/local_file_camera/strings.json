@@ -1,0 +1,43 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Local File Camera",
+        "description": "Configure a camera that displays a static image from a local file.",
+        "data": {
+          "file_path": "File Path",
+          "name": "Camera Name",
+          "refresh_interval": "Refresh Interval (seconds)"
+        },
+        "data_description": {
+          "file_path": "Absolute path to the image file (e.g., /config/images/camera.jpg)",
+          "name": "Name for this camera (e.g., Front Door Camera)",
+          "refresh_interval": "How often to check for file changes (5-3600 seconds)"
+        }
+      }
+    },
+    "error": {
+      "file_not_found": "File not found at the specified path",
+      "not_a_file": "The path is not a file",
+      "file_not_readable": "File cannot be read (check permissions)",
+      "invalid_image_format": "File must be an image (jpg, jpeg, png, gif, or bmp)",
+      "invalid_image_file": "File is not a valid image",
+      "directory_traversal": "File path cannot contain '..' for security reasons",
+      "not_absolute_path": "File path must be an absolute path (starting with /)"
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Local File Camera Options",
+        "description": "Update the refresh interval for this camera.",
+        "data": {
+          "refresh_interval": "Refresh Interval (seconds)"
+        },
+        "data_description": {
+          "refresh_interval": "How often to check for file changes (5-3600 seconds)"
+        }
+      }
+    }
+  }
+}
